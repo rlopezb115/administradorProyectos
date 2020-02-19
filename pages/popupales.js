@@ -3,14 +3,14 @@ import Layout from '../components/layout/Layout';
 import DetallesProducto from '../components/layout/DetallesProducto';
 import useProductos from '../hooks/useProductos';
 
-const Home = () => {
+const Populares = () => {
 
-    const {productos} = useProductos('creado');
+    const {productos} = useProductos('votos');
 
     return (
     <div>
         <Layout>
-            <h2>Pagina Principal</h2>
+            <h2>Proyectos populares</h2>
             <div className="listado-productos">
                 <div className="contenedor">
                     <ul className="bg-white">
@@ -30,4 +30,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Populares;
